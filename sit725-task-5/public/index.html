@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books App</title>
+</head>
+
+<body>
+
+<h1>My Book Collection</h1>
+
+
+<div id="books"></div>
+
+<script>
+fetch('/api/books')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('books');
+
+    container.innerHTML = ""; // clear first
+
+    data.data.forEach(book => {
+      const card = document.createElement('div');
+      card.style.background = "white";
+      card.style.margin = "10px";
+      card.style.padding = "10px";
+      card.style.borderRadius = "8px";
+
+      card.innerHTML = `
+        <h3>${book.title}</h3>
+        <p><b>Author:</b> ${book.author}</p>
+      `;
+
+      container.appendChild(card);
+    });
+  });
+</script>
+
+</body>
+</html>
