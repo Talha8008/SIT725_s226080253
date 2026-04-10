@@ -1,0 +1,15 @@
+.navbar-size {
+  width: 95% !important;
+  margin: 0 auto !important;
+}
+
+.main-body {
+  background-color: #F28487 !important;
+  color: white !important;
+  min-height: calc(100vh - 64px);
+  padding-top: 30px;
+}
+
+.card {
+  margin-top: 20px !important;
+}

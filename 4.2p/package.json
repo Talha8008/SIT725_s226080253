@@ -1,0 +1,15 @@
+{
+  "name": "sit725_s226080253",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "start": "node server.js"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "keywords": [],
+  "description": ""
+}
