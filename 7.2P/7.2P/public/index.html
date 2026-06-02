@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Study Group Check-In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Live Study Group Check-In</h1>
+
+    <button onclick="sendStatus('online')">🟢 Online</button>
+    <button onclick="sendStatus('busy')">🟡 Busy</button>
+    <button onclick="sendStatus('offline')">🔴 Offline</button>
+
+    <h2>Status Counts</h2>
+
+    <p>🟢 Online: <span id="online">0</span></p>
+    <p>🟡 Busy: <span id="busy">0</span></p>
+    <p>🔴 Offline: <span id="offline">0</span></p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
